@@ -17,11 +17,11 @@ LIMIT $1
 OFFSET $2;
 
 -- name: UpdateEntry :one
-UPDATE accounts
-SET balance = $2
+UPDATE entries
+SET amount = $2
 WHERE id = $1
 RETURNING *;
 
 -- name: DeleteEntry :exec
-DELETE FROM accounts
+DELETE FROM entries
 WHERE id = $1;
