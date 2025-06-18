@@ -73,3 +73,4 @@ AWS: Cloud infrastructure for hosting the app and leveraging various AWS service
   ```bash
   make sqlc
   ```
+  
